@@ -9,7 +9,7 @@ for item in warehouse1:
 
 from data import warehouse1, warehouse2
 
-# YOUR CODE STARTS HERE.
+# YOUR CODE STARTS HERE..
 
 # Get the user name
 
