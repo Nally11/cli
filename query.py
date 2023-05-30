@@ -9,7 +9,7 @@ for item in warehouse1:
 
 from data import warehouse1, warehouse2
 
-# YOUR CODE STARTS HERE
+# YOUR CODE STARTS HERE.
 
 # Get the user name
 
@@ -27,9 +27,9 @@ from data import warehouse1, warehouse2
 
 # Thank the user for the visit
 
-#user_name = input("Welcome to warehouse.com, what is your name?")
+user_name = input("Welcome to warehouse.com, what is your name?")
 
-#print("Hello", user_name)
+print("Hello", user_name)
 
 user_input = input("1. List items by warehouse`, `2. Search an item and place an order` and `3. Quit`")
 #11111111111111
@@ -55,17 +55,23 @@ elif "2" in user_input:
     print("Warehouse 1 has:",count1[find_item],find_item)
     print("Warehouse 2 has:",count2[find_item],find_item)
     order_query = input("would you like to place an order? y/n")
-    if "n" in order_query:
-        print("thank you for visiting", user_input)
-    elif "y" in order_query:
-        buy = int(input("how many would you like to buy?"))  
+    if "y" in order_query:
+        buy = int(input("how many would you like to buy?")) 
+    elif "n" in order_query:
+        print("thank you for visiting", user_name)
     if buy <= total_stock:
         print("The order of", buy, find_item, "has been placed")
     elif buy > total_stock:
         total_query = input("Sorry we do not have that much stock, would you like to order the maximum? y/n")
-    if "n" in total_query:
-        print("thank you for visiting", user_input)
-    elif "y" in total_query:
+    if "y" in total_query:
         print("The order of", total_stock, find_item, "has been placed")
+    elif "n" in total_query:
+        print("thank you for visiting", user_name)
+
+elif "3" in user_input:
+    print("thank you for visiting", user_name)
+
+elif "1,2,3" not in user_input:
+    print("Invalid user input")
         
 
