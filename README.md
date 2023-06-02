@@ -3,7 +3,7 @@ Warehouse Command Line Interface
 
 # Warehouse-project
 
-# Introduction
+# Introduction.
 
 ## Topics covered
 
